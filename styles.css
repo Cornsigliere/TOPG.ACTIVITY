@@ -1,0 +1,33 @@
+/* CSS to style the HTML content */
+body {
+    font-family: "Cutive Mono", monospace;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+/* CSS to hide the entire audio player */
+audio {
+    display: none;
+}
+/* CSS for the background image div */
+.background-image {
+    background-image: url('bugatti.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire div */
+    background-position: right bottom; /* Position it in the right lower portion */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    position: absolute; /* Set div position to absolute */
+    bottom: 0; /* Position it at the bottom of the body */
+    right: 0; /* Position it at the right of the body */
+    width: 35%; /* Set the width of the div */
+    height: 35%; /* Set the height of the div to cover the entire body */
+}
+mt-4{
+    padding: auto;
+}
+
+/* Image Carousel */

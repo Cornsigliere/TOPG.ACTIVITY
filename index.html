@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Play Audio with Spacebar Press (Hide Audio Player)</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        /* CSS to hide the entire audio player */
+        audio {
+            display: none;
+        }
+        .carousel-inner img{
+            max-width: 640px;
+            max-height: 360px;
+            width: auto;
+            height: auto;
+            bottom: 0;
+        }
+        .video-container{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+        }
+        .center {
+            display: block;
+            margin-left: 0;
+            margin-right: auto;
+        }
+        .carousel {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .carousel-control-next{
+            left: auto;
+        }
+    </style>
+</head>
+<body> 
+    <h1>HIT "SPACEBAR" TO BE A TOPG!</h1>
+
+    <audio id="myAudio" muted>
+        <source src="topgspecial.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="background-image"></div> <!-- This div will contain the background image -->
+    <div class="tatebrothers"></div> 
+
+
+    <!-- Image Carousel -->
+    <div class="container mt-5">
+        <!-- Image Carousel -->
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="alen1.png" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="gem1.png" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="alen2.png" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="gem2.png" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="alen3.png" class="d-block w-100" alt="Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Video Player -->
+
+            
+        <div class="mt-4">
+            <video class = "center" width="640" height="360" controls>
+                <source src="topvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <audio controls>
+            <source src="your-audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Audio Player -->
+        <div class="mt-4">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS (you need to include Bootstrap CSS and JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+        </div>
+    </div>
+    <script src="audioplay.js"></script>
+</body>
+</html>
